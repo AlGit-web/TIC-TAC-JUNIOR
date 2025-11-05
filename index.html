@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIC TAC GAME</title>
+    <link rel="stylesheet" href="style.css">
+    <title>X & O</title>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <audio src="mixkit-mouse-click-close-1113.wav" id="clickSound"></audio>
+    <section class="players">
+        <input type="text" placeholder="Խաղացող X" id="player1"> 
+        <input type="text" placeholder="Խաղացող O" id="player2">
+    </section>
+
+    <section class="platform">
+        <div class="sel" onclick="logic(this)"></div>
+        <div class="sel" onclick="logic(this)"></div>
+        <div class="sel" onclick="logic(this)"></div>
+
+        <div class="sel" onclick="logic(this)"></div>
+        <div class="sel" onclick="logic(this)"></div>
+        <div class="sel" onclick="logic(this)"></div>
+
+        <div class="sel" onclick="logic(this)"></div>
+        <div class="sel" onclick="logic(this)"></div>
+        <div class="sel" onclick="logic(this)"></div>
+    </section>
+
+    <section id="win">
+        <p id="close"><img src="4686859.png" onclick="pakel()"></p>
+        <p id="winName"></p>
+    </section>
+</body>
+
+</html>

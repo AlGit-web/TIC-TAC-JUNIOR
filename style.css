@@ -1,0 +1,67 @@
+body {
+  background: linear-gradient(135deg, #8252EC, #cd80f7,transparent);
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  flex-wrap: wrap;
+}
+.players{
+  width: 100%;
+  text-align: center;
+}
+#player1, #player2{
+  background: linear-gradient(195deg,white,white,transparent);
+  border-color: white;
+  font-size: 25px;
+  border-radius: 5%;
+}
+#player1:focus::placeholder, 
+#player2:focus::placeholder{
+  background: linear-gradient(-195deg,rgba(255, 0, 102, 0.447),rgba(255, 0, 102, 0.447),white,transparent);
+}
+.platform {
+  display: flex;
+  height: 480px;
+  width: 480px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sel {
+  width: 140px;
+  height: 140px;
+  background-color:white;
+  margin: 10px;
+  border-radius: 7%;
+  font-size: 80px;
+  text-align: center;
+  padding-top: 15px;
+  box-sizing: border-box;
+  background: linear-gradient(135deg,white, white,transparent);
+}
+.cell:hover{
+  background-color: rgb(187, 216, 235);
+}
+#win{
+  position: absolute;
+  border-color: rgb(74, 28, 116);
+  background-color: #8252EC;
+  width: 55vw;
+  height: 60vh;
+  margin-top:  10vh;
+  box-shadow: 10px 10px 5px rgb(39,8,69);
+  display: none;
+}
+#close{
+  text-align: right;
+  padding-right: 30px;
+}
+#close img{
+  width: 100px;
+}
+#winName{
+  text-align: center;
+  font-size: 50px;
+  color: #1b1034;
+  text-shadow: 3px 3px 3px #b198e6, -3px -3px 3px #5a2fb7, 5px 5px 3px #b198e6, -5px -5px 3px #5a2fb7;
+}
